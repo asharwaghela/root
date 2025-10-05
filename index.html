@@ -14,8 +14,15 @@
     <meta name="description" content="Looking for old clothes near me? Asha Old Clothes Buyer in Thane helps you sell or donate old clothes with free home pickup and instant cash.">
     <meta name="keywords" content="old clothes near me, old clothes buyer, sell old clothes, donate clothes, old clothes Thane, thrift store Thane">
     <meta name="author" content="Asha Old Clothes Buyer">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="style" href="https://cdn.tailwindcss.com">
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.tailwindcss.com"></noscript>
+
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -44,11 +51,11 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             
             <a href="/" class="flex items-center gap-2">
-                <img src="logo.png" alt="Asha Old Clothes Buyer Logo" class="h-10 w-auto">
+                <img src="logo.png" alt="Asha Old Clothes Buyer Logo" class="h-10 w-auto" width="40" height="40">
                 <span class="text-2xl font-bold text-teal-600 hidden sm:block">Asha Old Clothes Buyer</span>
             </a>
             
-            <a href="tel:08828743006" class="bg-teal-500 text-black font-semibold px-4 py-2 rounded-lg hover:bg-teal-600 transition duration-300 shadow-sm flex items-center gap-2">
+            <a href="tel:08828743006" class="bg-teal-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-teal-600 transition duration-300 shadow-sm flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 3.683a1 1 0 01-1.782.522L4.355 7.1A19.055 19.055 0 0014.9 15.645l.93-.93a1 1 0 01.522-1.782l3.684.74A1 1 0 0118 16.847V18a1 1 0 01-1 1h-2a17 17 0 01-17-17V3z" />
                 </svg>
@@ -130,19 +137,19 @@
                 <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
                     <div class="text-center max-w-xs">
                         <div class="bg-teal-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
-                        <h4 class="text-xl font-semibold mb-2">Call Us</h4>
+                        <h3 class="text-xl font-semibold mb-2">Call Us</h3>
                         <p class="text-gray-600">Schedule a pickup at your convenience via call or WhatsApp.</p>
                     </div>
                     <div class="text-gray-300 text-2xl hidden md:block">→</div>
                      <div class="text-center max-w-xs">
                         <div class="bg-teal-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
-                        <h4 class="text-xl font-semibold mb-2">We Arrive</h4>
+                        <h3 class="text-xl font-semibold mb-2">We Arrive</h3>
                         <p class="text-gray-600">Our team will come to your location for a quick inspection.</p>
                     </div>
                     <div class="text-gray-300 text-2xl hidden md:block">→</div>
                     <div class="text-center max-w-xs">
                         <div class="bg-teal-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
-                        <h4 class="text-xl font-semibold mb-2">Get Paid / Donate</h4>
+                        <h3 class="text-xl font-semibold mb-2">Get Paid / Donate</h3>
                         <p class="text-gray-600">Receive instant cash or donate your clothes to people in need.</p>
                     </div>
                 </div>
