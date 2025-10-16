@@ -10,24 +10,25 @@
   <link rel="canonical" href="https://oldclothesbuyer.com/">
   <link rel="icon" href="https://oldclothesbuyer.com/favicon.ico">
 
+  <!-- Google Tag Manager: place high in head -->
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+  j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+  f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5KD5GSCX');
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- GTM placement guidance follows Google Tag Manager Help. -->
+
   <!-- Speed: preconnect + preload fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
 
-  <!-- Google tag (if used) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6VWCCF0HV6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-6VWCCF0HV6');
-  </script>
-
   <!-- Styles -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{--brand:#14b8a6;}
     body{font-family:'Inter',sans-serif}
@@ -35,6 +36,9 @@
     .btn{transition:.25s transform ease,.25s box-shadow ease}
     .btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(20,184,166,.25)}
     .lazy-section{content-visibility:auto;contain-intrinsic-size: 1000px 800px;}
+    /* Responsive Google Map helper (unused for fixed height map) */
+    .map-embed { position: relative; width: 100%; overflow: hidden; }
+    @media (max-width: 480px) { .map-embed { } }
   </style>
 
   <!-- LocalBusiness Schema -->
@@ -58,6 +62,28 @@
   }
   </script>
 
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"What’s the best place to sell old clothes?","acceptedAnswer":{"@type":"Answer","text":"For Thane residents, the fastest option is a doorstep buyer like Asha Old Clothes Buyer—no listings, no shipping, and instant cash after a quick inspection."}},
+      {"@type":"Question","name":"How to best sell old clothes?","acceptedAnswer":{"@type":"Answer","text":"Group by category, keep items clean and dry, estimate the weight, then book a pickup on WhatsApp or call; you’ll get a fair on-the-spot quote and payment."}},
+      {"@type":"Question","name":"Which areas do you serve in Thane?","acceptedAnswer":{"@type":"Answer","text":"Hiranandani Meadows, Hiranandani Estate (Patlipada), Naupada, the Raymond area, Kolshet Road, Manpada, Balkum, Kasarvadavli, Runwal, and nearby neighborhoods."}},
+      {"@type":"Question","name":"Do you buy household items and appliances too?","acceptedAnswer":{"@type":"Answer","text":"Yes—TVs, mobiles, ACs, toys, kitchenware, bags, curtains, and bedsheets in usable condition. Final quote is given on call or during the home visit after inspection."}},
+      {"@type":"Question","name":"How is the price decided?","acceptedAnswer":{"@type":"Answer","text":"Based on condition, category, and demand, plus the approximate weight; the team explains the calculation before proceeding."}},
+      {"@type":"Question","name":"When do I get paid, and how?","acceptedAnswer":{"@type":"Answer","text":"Immediately after inspection via cash or UPI—your choice."}},
+      {"@type":"Question","name":"What items are not accepted?","acceptedAnswer":{"@type":"Answer","text":"Items that are severely soiled, broken, unsafe, or infested are declined; hazardous materials, medical waste, and e-waste without proper disposal are not collected."}},
+      {"@type":"Question","name":"Is there a minimum quantity?","acceptedAnswer":{"@type":"Answer","text":"8–10 kg is ideal for clothes, but we’re flexible—share your location and estimate to confirm the slot."}},
+      {"@type":"Question","name":"Can I donate instead of selling?","acceptedAnswer":{"@type":"Answer","text":"Yes, donation pickups are free; a basic acknowledgement can be provided on request."}},
+      {"@type":"Question","name":"How should I prepare for pickup?","acceptedAnswer":{"@type":"Answer","text":"Pack items in bags or cartons and separate by type; this speeds up weighing and handling."}},
+      {"@type":"Question","name":"Can I reschedule or track my pickup?","acceptedAnswer":{"@type":"Answer","text":"You’ll receive a WhatsApp confirmation; reply there anytime to reschedule or request an update."}},
+      {"@type":"Question","name":"What’s the fastest way to contact you?","acceptedAnswer":{"@type":"Answer","text":"Use the Call or WhatsApp buttons on oldclothesbuyer.com for the quickest response."}}
+    ]
+  }
+  </script>
+
   <!-- Smooth anchor scroll + offset -->
   <style>
     html{scroll-behavior:smooth}
@@ -66,17 +92,27 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
+<!-- Google Tag Manager (noscript): immediately after opening body -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KD5GSCX"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- The noscript iframe provides a fallback per GTM installation guide. -->
+
 <header class="bg-white shadow-sm sticky top-0 z-50">
   <div class="container mx-auto px-6 py-3 flex flex-wrap items-center gap-3 justify-between">
     <a href="/" class="text-2xl font-extrabold text-teal-600">Asha Old Clothes Buyer</a>
 
     <!-- Visible nav -->
-    <nav class="flex items-center gap-6 text-base">
-      <a href="/" class="text-teal-600 font-semibold">Home</a>
-      <a href="/prices.html" class="text-gray-900 hover:text-teal-600 font-medium">Prices</a>
-      <a href="#process" class="text-gray-900 hover:text-teal-600 font-medium">Process</a>
-      <a href="#contact" class="text-gray-900 hover:text-teal-600 font-medium">Contact</a>
-    </nav>
+<nav class="flex items-center gap-6 text-base">
+  <a href="/" class="text-teal-600 font-semibold">Home</a>
+  <a href="/prices.html" class="text-gray-900 hover:text-teal-600 font-medium">Prices</a>
+  <a href="#process" class="text-gray-900 hover:text-teal-600 font-medium">Process</a>
+  <a href="#contact" class="text-gray-900 hover:text-teal-600 font-medium">Contact</a>
+  <a href="#faq" class="text-gray-900 hover:text-teal-600 font-medium">FAQ</a>
+</nav>
+
 
     <a href="tel:+918828743006" class="bg-teal-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-teal-600 transition">
       Call Now
@@ -194,16 +230,30 @@
       <p class="text-gray-300 my-4 text-lg">Contact us now to schedule your free home pickup in Thane.</p>
 
       <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
-        <a href="https://wa.me/918828743006?text=I%20want%20to%20sell%20my%20old%20clothes%20%7C%20Name:%20%7C%20Area:%20%7C%20Approx%20kg:%20" class="btn bg-green-500 text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-green-600 inline-flex items-center justify-center gap-3" rel="noopener nofollow">
+        <a href="https://wa.me/918828743006?text=I%20want%20to%20sell%20my%20old%20clothes%20%7C%20Name:%20%7C%20Area:%20%7C%20Approx%20kg:%20"
+           class="btn bg-green-500 text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-green-600 inline-flex items-center justify-center gap-3"
+           rel="noopener nofollow">
           Sell Clothes (WhatsApp)
         </a>
-        <a href="https://wa.me/918828743006?text=I%20want%20to%20donate%20my%20old%20clothes%20%7C%20Name:%20%7C%20Area:%20%7C%20Pickup%20time:%20" class="btn bg-white text-green-600 font-bold py-4 px-8 rounded-full text-lg border-2 border-green-500 hover:bg-gray-100 inline-flex items-center justify-center gap-3" rel="noopener nofollow">
+        <a href="https://wa.me/918828743006?text=I%20want%20to%20donate%20my%20old%20clothes%20%7C%20Name:%20%7C%20Area:%20%7C%20Pickup%20time:%20"
+           class="btn bg-white text-green-600 font-bold py-4 px-8 rounded-full text-lg border-2 border-green-500 hover:bg-gray-100 inline-flex items-center justify-center gap-3"
+           rel="noopener nofollow">
           Donate Clothes (WhatsApp)
         </a>
       </div>
 
-      <!-- Auto-loaded map -->
-      <iframe title="Asha Old Clothes Buyer location in Thane" aria-label="Map showing Asha Old Clothes Buyer" src="https://maps.google.com/maps?q=Asha%20Old%20Clothes%20Buyer%20Manpada,%20Building%206,%20Ground%20Floor,%20near%20Runwal,%20Thane,%20Maharashtra%20400607&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0" allowfullscreen loading="lazy" class="mt-4 rounded-lg shadow-md"></iframe>
+      <!-- Map (unchanged width/height/style as you sent) -->
+      <iframe
+        title="Asha Old Clothes Buyer on Google Maps"
+        aria-label="Map showing Asha Old Clothes Buyer"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1636382677216!2d72.97538437466889!3d19.23169884706728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9fc8852e1d3%3A0x8514c0eb40ced03c!2sAsha%20Old%20Clothes%20Buyer!5e0!3m2!1sen!2sin!4v1760650831115!5m2!1sen!2sin"
+        width="100%"
+        height="300"
+        style="border:0; display:block; width:100%; height:300px;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
 
       <p class="mt-4">Website: <a href="https://oldclothesbuyer.com/" class="text-teal-400 font-semibold">oldclothesbuyer.com</a></p>
       <p class="mt-1">Phone: <a href="tel:+918828743006" class="text-teal-400 font-semibold">+91 88287 43006</a></p>
@@ -211,9 +261,139 @@
     </div>
   </section>
 
-</main>
+  <!-- FAQ directly under map as requested -->
+  <section id="faq" class="py-16 sm:py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-800">Frequently Asked Questions</h2>
+        <p class="text-gray-600 mt-2">Quick answers to common questions.</p>
+      </div>
 
-<script defer src="https://cdn.trustindex.io/loader.js?c73fc4a550371897f336090c13f"></script>
+      <div class="max-w-3xl mx-auto space-y-4">
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">What’s the best place to sell old clothes?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            For Thane residents, the fastest option is a doorstep buyer like Asha Old Clothes Buyer—no listings, no shipping, and instant cash after a quick inspection.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">How to best sell old clothes?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            Group by category, keep items clean and dry, estimate the weight, then book a pickup on WhatsApp or call; you’ll get a fair on-the-spot quote and payment.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">Which areas do you serve in Thane?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            Hiranandani Meadows, Hiranandani Estate (Patlipada), Naupada, the Raymond area, Kolshet Road, Manpada, Balkum, Kasarvadavli, Runwal, and nearby neighborhoods.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">Do you buy household items and appliances too?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            Yes—TVs, mobiles, ACs, toys, kitchenware, bags, curtains, and bedsheets in usable condition. Final quote is given on call or during the home visit after inspection.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">How is the price decided?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            Based on condition, category, and demand, plus the approximate weight; the team explains the calculation before proceeding.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">When do I get paid, and how?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            Immediately after inspection via cash or UPI—your choice.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">What items are not accepted?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            Items that are severely soiled, broken, unsafe, or infested are declined; hazardous materials, medical waste, and e-waste without proper disposal are not collected.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">Is there a minimum quantity?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            8–10 kg is ideal for clothes, but we’re flexible—share your location and estimate to confirm the slot.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">Can I donate instead of selling?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            Yes, donation pickups are free; a basic acknowledgement can be provided on request.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">How should I prepare for pickup?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            Pack items in bags or cartons and separate by type; this speeds up weighing and handling.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">Can I reschedule or track my pickup?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            You’ll receive a WhatsApp confirmation; reply there anytime to reschedule or request an update.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-gray-200 bg-white p-5">
+          <summary class="flex cursor-pointer list-none items-center justify-between">
+            <span class="font-semibold text-gray-900">What’s the fastest way to contact you?</span>
+            <span class="text-gray-500 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <div class="mt-3 text-gray-700">
+            Use the Call or WhatsApp buttons on oldclothesbuyer.com for the quickest response.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <footer class="bg-gray-900 text-white py-6">
   <div class="container mx-auto px-6 text-center">
